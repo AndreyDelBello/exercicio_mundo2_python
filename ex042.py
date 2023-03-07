@@ -16,6 +16,3 @@ if (c1 + c2) > c3 and (c1 + c3) > c2 and (c2 + c3) > c1:
 else:
     print('Os segmentos acima NÃO formam um TRIÂNGULO!')
     
-
-        
-    
