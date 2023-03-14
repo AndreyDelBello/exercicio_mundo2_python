@@ -4,12 +4,10 @@ print('='* 20)
 
 primeiro = int(input('Primeiro termo: '))
 razao = int(input('Razão: '))
+termo = primeiro
 cont = 1
 while cont <= 10:
-    if cont < 10:
-        print(f'{primeiro} --> ', end='')
-    elif cont == 10:
-        print(f'{primeiro}', end='')
-    primeiro += razao
+    print(f'{termo} -> ', end='')
+    termo += razao
     cont += 1
-print('--> FIM')
+print('FIM')
