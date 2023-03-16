@@ -1,15 +1,14 @@
-n = int(input("Que termo deseja encontrar: "))
-ultimo=1
-penultimo=1
+n = int(input("Quantos termos deseja encontrar: "))
+t1 = 0
+t2 = 1
+c = 3
+print('~'*30)
+print(f'{t1} -> {t2}', end='')
 
-if (n==1) or (n==2):
-    print("1")
-else:
-    count=3
-    while count <= n:
-        print(f'{termo} ->', end='')
-        termo = ultimo + penultimo
-        penultimo = ultimo
-        ultimo = termo
-        count += 1
-    print('FIM')
+while c <= n:
+    t3 = t1 + t2
+    print(f' -> {t3}', end = '')
+    t1 = t2
+    t2 = t3  
+    c += 1
+print(' -> FIM')
